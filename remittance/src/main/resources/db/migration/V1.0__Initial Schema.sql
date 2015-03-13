@@ -1,0 +1,13 @@
+CREATE TABLE `tbl_pembayaran` (
+	`id` INT(11) NOT NULL,
+	`branch` VARCHAR(5) NULL DEFAULT NULL,
+	`cif` VARCHAR(20) NULL DEFAULT NULL,
+	`customer_name` VARCHAR(50) NULL DEFAULT NULL,
+	`tipe_pembayaran` VARCHAR(2) NULL DEFAULT NULL,
+	`amount` DECIMAL(10,0) NULL DEFAULT NULL,
+	`status` VARCHAR(2) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
